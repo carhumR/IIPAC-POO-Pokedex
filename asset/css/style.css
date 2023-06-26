@@ -1,0 +1,112 @@
+/* Diseño de la pokeball en el fondo */
+#pokerball-background {
+    opacity: 0.1;
+    position: absolute;
+    left: 110px;
+    top: -70px;
+    z-index: -1;
+    height: auto;
+    width: 400px;
+
+}
+
+/* iconos de retroceder <- y lista menu */
+#icono-menu {
+   display: flex;
+   justify-content: space-between;
+   padding: 1.5rem;
+
+}
+
+/* El contenedor de las tarjetas de pekemon */
+/* Contenedor padre */
+.contenedor {
+    /* min-height: 600px;
+    width: 100%;
+    padding: 0.5rem; */
+
+    /* Investigar cada termino*/
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    isolation: isolate; */
+
+    /* Solucion para que no salga de la tarjeta */
+
+    top: 2vh;
+    display: grid;
+    height: 200vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+    position: relative;
+    padding: .5rem;
+    isolation: isolate;
+}
+
+/* Configuracion de todas las tarjetas */
+.card {
+    border-radius: 20px;
+    /* relative: toma posicion unicamente en la rectangulo que lo contiene */
+    position: relative;
+    overflow: hidden;
+}
+
+.pokemon1, 
+.pokemon2,
+.pokemon3{
+    background-color: hsla(166, 59%, 55%, 1);
+   
+}
+
+ 
+.pokemon4,
+.pokemon5,
+.pokemon6 {
+    background-color: #fc6c6d;
+}
+
+
+.pokemon7,
+.pokemon8,
+.pokemon9 {
+    background-color: #76befe;
+}
+
+.pokemon10 {
+    background-color: #ffd76f;
+}
+
+/* Fondo de las tarjetas */
+.pokeball-fondo {
+    position: absolute;
+    top: 1rem;
+    right: -15px;
+    max-width: 7.5rem;
+    
+}
+
+/* Posicion de los pokemones */
+.pokemons {
+    position: absolute;
+    max-width: 5rem;
+    right: 10px;
+    bottom: 5%;
+    overflow: hidden;
+}
+
+.pokemon-nombre {
+    position: absolute;
+    top: 1%;
+    color: #ffffff;
+    left: 5%;
+}
+
+h1, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
